@@ -1,0 +1,14 @@
+<Providers xmlns="http://www.pcsoft.org/mail-fx/provider">
+    <Provider id="freenet" name="FreeNet" description="FreeNet">
+        <ProviderIds>
+            <ProviderId>freenet</ProviderId>
+        </ProviderIds>
+        <CountryCodes>
+            <CountryCode code="de">
+                <Host></Host>
+                <Port>9000</Port>
+                <ProtocolRef></ProtocolRef>
+            </CountryCode>
+        </CountryCodes>
+    </Provider>
+</Providers>

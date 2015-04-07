@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pcsoft.tools.mail_fx.plugin.mail_protocol.impl.pop3.page.settings.SettingsPageController">
+   <children>
+      <CheckBox fx:id="ckbEnableTls" mnemonicParsing="false" text="Enable TLS">
+         <VBox.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </VBox.margin></CheckBox>
+   </children>
+</VBox>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pcsoft.tools.mail_fx.ui.wizard.account.SummaryPage">
+   <top>
+      <VBox prefHeight="100.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </BorderPane.margin>
+         <children>
+            <Label text="All account data was determine now. Please show the summary below to check your entered data and finish the wizard to create a new account with this data." textAlignment="JUSTIFY" wrapText="true" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox spacing="5.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </BorderPane.margin>
+         <children>
+            <TitledPane animated="false" collapsible="false" text="General">
+               <content>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" percentWidth="30.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" percentWidth="70.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" text="Account Title">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblAccountTitle" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="XXX" GridPane.columnIndex="1" />
+                        <Label maxWidth="1.7976931348623157E308" text="Mail Protocol" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblProtocol" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="XXX" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label maxWidth="1.7976931348623157E308" text="Mail File Type" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblMailFileType" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="XXX" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" collapsible="false" text="Mail Protocol">
+               <content>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" percentWidth="30.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" percentWidth="70.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" text="Host Address / IP">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblProtocolHost" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="XXX" GridPane.columnIndex="1" />
+                        <Label maxWidth="1.7976931348623157E308" text="Port" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblProtocolPort" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="XXX" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" collapsible="false" text="Mail File">
+               <content>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" percentWidth="30.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" percentWidth="70.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label maxWidth="1.7976931348623157E308" text="Mail File State">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblMailFileState" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="XXX" GridPane.columnIndex="1" />
+                        <Label maxWidth="1.7976931348623157E308" text="Mail File Name / Location" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblMailFileName" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="XXX" textAlignment="JUSTIFY" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </content>
+            </TitledPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

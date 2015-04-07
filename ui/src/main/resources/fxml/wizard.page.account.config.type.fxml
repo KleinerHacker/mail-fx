@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pcsoft.tools.mail_fx.ui.wizard.account.ConfigurationTypePage">
+    <top>
+        <VBox prefHeight="100.0" spacing="2.0">
+            <children>
+                <Label text="Welcome to Account Creation Wizard!" BorderPane.alignment="TOP_LEFT">
+                    <BorderPane.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                    </BorderPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label text="On the next pages you can configure a new mail account with your settings. Follow the instructures on the next pages." wrapText="true" />
+                <Label text="Please select how to configure your mail account:">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </BorderPane.margin>
+        </VBox>
+    </top>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+            </BorderPane.margin>
+            <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="5.0" />
+                <ColumnConstraints hgrow="SOMETIMES" percentWidth="95.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                  <RowConstraints vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Automatic search for configuration values" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                      <Label text="On the next page you enter your mail address and the system try to get the configuration values automatically from the provider." textAlignment="JUSTIFY" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Manuel configuration" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets top="50.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                      <Label text="On the next pages you enter all configuration values manuel. Please ensure that you have all information to do that now." textAlignment="JUSTIFY" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                      <RadioButton fx:id="rbAutomaticConfiguration" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" selected="true" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS">
+                          <toggleGroup>
+                              <ToggleGroup fx:id="grpConfigurationType" />
+                          </toggleGroup>
+                      </RadioButton>
+                      <RadioButton fx:id="rbManuelConfiguration" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" toggleGroup="$grpConfigurationType" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS">
+                     <GridPane.margin>
+                        <Insets top="50.0" />
+                     </GridPane.margin>
+                      </RadioButton>
+               </children>
+            </GridPane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

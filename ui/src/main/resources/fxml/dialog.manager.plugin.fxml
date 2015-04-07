@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pcsoft.tools.mail_fx.ui.dialog.manager.plugin.PluginManagerDialogController">
+    <children>
+        <BorderPane>
+            <left>
+                <ToolBar orientation="VERTICAL" prefWidth="40.0" BorderPane.alignment="CENTER" />
+            </left>
+            <center>
+                <TreeTableView fx:id="tblPlugin" editable="true" prefHeight="200.0" prefWidth="200.0" showRoot="false" BorderPane.alignment="CENTER">
+                    <columns>
+                        <TreeTableColumn fx:id="tbcPluginType" editable="false" minWidth="100.0" prefWidth="150.0" text="Plugin-Type" />
+                        <TreeTableColumn fx:id="tbcPluginActive" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" resizable="false" sortable="false" text="Act." />
+                        <TreeTableColumn fx:id="tbcPluginId" editable="false" minWidth="50.0" prefWidth="100.0" text="ID" />
+                        <TreeTableColumn fx:id="tbcPluginName" editable="false" minWidth="100.0" prefWidth="150.0" text="Name" />
+                        <TreeTableColumn fx:id="tbcPluginDescription" editable="false" minWidth="250.0" prefWidth="800.0" sortable="false" text="Description" />
+                    </columns>
+                </TreeTableView>
+            </center>
+        </BorderPane>
+        <fx:include fx:id="waiter" source="fragment.waiter.fxml" />
+    </children>
+</StackPane>

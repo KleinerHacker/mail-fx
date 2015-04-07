@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pcsoft.tools.mail_fx.ui.dialog.manager.account.AccountManagerDialogController">
+    <children>
+        <BorderPane>
+            <center>
+                <TableView fx:id="tblAccount" editable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <columns>
+                        <TableColumn fx:id="tbcState" editable="false" maxWidth="35.0" minWidth="35.0" prefWidth="35.0" resizable="false" sortable="false" />
+                        <TableColumn fx:id="tbcTitle" minWidth="100.0" prefWidth="250.0" text="Title" />
+                        <TableColumn fx:id="tbcMailAddress" minWidth="100.0" prefWidth="350.0" text="Mail Address" />
+                        <TableColumn fx:id="tbcProvider" editable="false" minWidth="100.0" prefWidth="250.0" text="Provider" />
+                        <TableColumn fx:id="tbcMailProtocol" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Mail Protocol" />
+                        <TableColumn fx:id="tbcMailFile" editable="false" minWidth="100.0" prefWidth="150.0" text="Mail File" />
+                        <TableColumn fx:id="tbcMailFileType" editable="false" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Mail File Type" />
+                    </columns>
+                </TableView>
+            </center>
+            <left>
+                <ToolBar orientation="VERTICAL" prefWidth="40.0" BorderPane.alignment="CENTER">
+                    <items>
+                        <Button fx:id="btnAddAccount" onAction="#onActionAddAccount">
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@../icons/ic_account_add16.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <tooltip>
+                                <Tooltip text="Add Account" />
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="btnEditAccount" onAction="#onActionEditAccount">
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@../icons/ic_account_edit16.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <tooltip>
+                                <Tooltip text="Edit Account" />
+                            </tooltip>
+                        </Button>
+                        <Separator />
+                        <Button fx:id="btnRemoveAccount" onAction="#onActionRemoveAccount">
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@../icons/ic_account_remove16.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <tooltip>
+                                <Tooltip text="Remove Account" />
+                            </tooltip>
+                        </Button>
+                    </items>
+                </ToolBar>
+            </left>
+        </BorderPane>
+        <fx:include fx:id="waiter" source="fragment.waiter.fxml" />
+    </children>
+</StackPane>

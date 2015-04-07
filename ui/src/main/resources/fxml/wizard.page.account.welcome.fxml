@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pcsoft.tools.mail_fx.ui.wizard.account.WelcomePage">
+    <top>
+        <VBox prefHeight="100.0" spacing="2.0">
+            <children>
+                <Label text="Welcome to Account Creation Wizard!" BorderPane.alignment="TOP_LEFT">
+                    <BorderPane.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                    </BorderPane.margin>
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <Label text="On the next pages you can configure a new mail account with your settings. Follow the instructures on the next pages." textAlignment="JUSTIFY" wrapText="true" />
+                <Label text="Please enter a title for the account:">
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </BorderPane.margin>
+        </VBox>
+    </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </BorderPane.margin>
+         <children>
+            <Label text="Title of account:">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtAccountTitle" promptText="Enter Account Title">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Mail Address:">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtMailAddress" promptText="Enter Mail Address">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Username:">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="50.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtUsername" promptText="Enter username">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Password:">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </Label>
+            <StackPane>
+               <children>
+                  <PasswordField fx:id="txtPassword" editable="false" promptText="Enter password" text="12345">
+                     <VBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Label text="Coming Soon" textFill="RED" StackPane.alignment="CENTER_RIGHT">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </StackPane.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </StackPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

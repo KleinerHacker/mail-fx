@@ -1,0 +1,74 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.Image?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.pcsoft.tools.mail_fx.ui.window.main.MainWindowMenuController">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu text="_File">
+                    <items>
+                        <MenuItem onAction="#onActionExit" text="_Exit"/>
+                    </items>
+                </Menu>
+                <Menu text="_Edit"/>
+                <Menu text="_Management">
+                    <items>
+                        <MenuItem onAction="#onActionAccountManager" text="_Account Manager...">
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@../../../icons/ic_account16.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </MenuItem>
+                        <MenuItem onAction="#onActionPluginManager" text="_Plugin Manager...">
+                            <graphic>
+                                <ImageView>
+                                    <image>
+                                        <Image url="@../../../icons/ic_plugin16.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </MenuItem>
+                    </items>
+                </Menu>
+                <Menu text="_Help">
+                    <items>
+                        <MenuItem onAction="#onActionAbout" text="_About"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <ToolBar prefHeight="40.0" prefWidth="200.0">
+            <items>
+                <Button onAction="#onActionAccountManager">
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@../../../icons/ic_account16.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Account Manager"/>
+                    </tooltip>
+                </Button>
+                <Button onAction="#onActionPluginManager">
+                    <graphic>
+                        <ImageView>
+                            <image>
+                                <Image url="@../../../icons/ic_plugin16.png"/>
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip text="Plugin Manager"/>
+                    </tooltip>
+                </Button>
+            </items>
+        </ToolBar>
+    </children>
+</VBox>

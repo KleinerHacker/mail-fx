@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pcsoft.tools.mail_fx.ui.splash.SplashController">
+   <children>
+       <ImageView>
+           <image>
+               <Image url="@../splash.png" />
+           </image>
+       </ImageView>
+       <AnchorPane onMouseClicked="#onMouseClickBackground">
+         <children>
+            <Label fx:id="lblVersion" layoutX="24.0" layoutY="219.0" mouseTransparent="true" style="-fx-text-fill: black;" text="Version XXX">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </Label>
+            <ProgressIndicator fx:id="pbProgress" layoutX="660.0" layoutY="136.0" mouseTransparent="true" prefHeight="200.0" prefWidth="200.0" />
+            <Hyperlink layoutX="119.0" layoutY="417.0" onAction="#onActionBackgroundLink" style="-fx-text-fill: gray;" text="Background designed by Freepik.com">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="24.0" layoutY="14.0" mouseTransparent="true" style="-fx-text-fill: black;" text="PC Soft">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="18.0" layoutY="31.0" onAction="#onActionLicenceLink" style="-fx-text-fill: black;" text="Open Source - Apache 2.0 Licence">
+               <font>
+                  <Font name="Impact" size="14.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.pcsoft.tools.mail_fx.ui.wizard.account.MailFileChoicePage">
+   <top>
+      <VBox prefHeight="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="On this page you can select to create a new file or to load an existing file. Additional you must select your prefered mail file type to use from the list below." textAlignment="JUSTIFY" wrapText="true" />
+            <Label text="Please select an option:">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin></Label>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" percentWidth="5.0" />
+          <ColumnConstraints hgrow="SOMETIMES" percentWidth="95.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </BorderPane.margin>
+         <children>
+            <Label mouseTransparent="true" text="Create a new file" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label mouseTransparent="true" text="Use an existing file" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="25.0" />
+               </GridPane.margin>
+            </Label>
+            <Label mouseTransparent="true" text="Creates a new file with empty content in the default mail file folder. The new name is to enter on the next pages. Extension of the file is given by the selected mail file type on next page." textAlignment="JUSTIFY" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label mouseTransparent="true" text="You can load an existing file with all content to use it again. The file is selected on the next pages and will copy to the default mail file folder or is used from the current location." textAlignment="JUSTIFY" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <RadioButton fx:id="rbCreateFile" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" selected="true" textAlignment="JUSTIFY" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grpFileState" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbLoadFile" alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" textAlignment="JUSTIFY" toggleGroup="$grpFileState" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets top="25.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <ListView fx:id="lstFileType" prefHeight="100.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets top="2.0" />
+               </GridPane.margin>
+            </ListView>
+            <Label text="Select a file type:" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="25.0" />
+               </GridPane.margin>
+            </Label>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>
